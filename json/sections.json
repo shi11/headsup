@@ -1,0 +1,26 @@
+{
+	"sections" :
+	[
+		{"name":"home",
+		"src":"home.html",
+		"image":"images/scottAndAnnie_a.jpg"},
+		{"name":"bios",
+		"src":"bio.html",
+		"image":"images/scottAndAnnie_a.jpg"},
+		{"name":"companies",
+		"src":"companies.html",
+		"image":"images/scottAndAnnie_a.jpg"},
+		{"name":"brands",
+		"src":"brands.html",
+		"image":"images/scottAndAnnie_a.jpg"},
+		{"name":"services",
+		"src":"services.html",
+		"image":"images/scottAndAnnie_a.jpg"},
+		{"name":"specialities",
+		"src":"specialities.html",
+		"image":"images/scottAndAnnie_a.jpg"},
+		{"name":"contact",
+		"src":"contact.html",
+		"image":"images/B.jpg"}
+	]
+}

@@ -1,0 +1,324 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+    	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Heads up!</title>
+		
+		<script type="text/javascript"> 
+			 $(document).ready(function(e) {
+				$("#companies h3 a").click( function(e) {
+					var header = $(this).closest('h3');
+					var companyList = header.next('ul');
+					//deselect
+					$(this).closest('h3').siblings('h3').removeClass('selected');
+					//select
+					header.addClass('selected');
+					$("#subcompanies").html( companyList.clone() );
+					//console.log( items );
+					e.preventDefault();
+				})
+				
+			  });
+		</script>
+	</head>
+		
+<body>
+<div>
+<div id="subcompanies"></div>
+<div id="companies">
+<h3 class="selected"><a href="#">Advertising & Public Relations Agencies</a></h3>
+<ul>
+<li>Adams & Rinehart Inc.</li>
+<li>Ammeriti & Puris</li>
+<li>Ammeriti Puris Lintas Inc.</li>
+<li>Avrett Free & Ginsburg</li>
+<li>Barry Brown Advertising</li>
+<li>Bartle Bogle Hegarty (UK)</li>
+<li>Bates USA</li>
+<li>Berenter Greenhouse & Webster</li>
+<li>Biederman & Co.</li>
+<li>The Bloom Agency Inc.</li>
+<li>Charron Schwartz & Partners Inc.</li>
+<li>Creamer Dickson Basford</li>
+<li>D’Arcy Masius Benton & Bowles, Inc.</li>
+<li>DCA Advertising</li>
+<li>DDB Needham Worldwide</li>
+<li>Della Famina McNamee, Inc.</li>
+<li>Dentsu (Japan)</li>
+<li>Duffy U.S.A.</li>
+<li>Fallon McElligott</li>
+<li>Grey Worldwide</li>
+<li>Hal Riney & Partners</li>
+<li>J. Walter Thompson</li>
+<li>KAE Development (UK)</li>
+<li>Lintas New York</li>
+<li>Lowe & Partners</li>
+<li>N. W. Ayer </li>
+<li>Ogilvy & Mather</li>
+<li>Planetweb, Inc.</li>
+<li>Publicus</li>
+<li>Publicus/Hal Riney</li>
+<li>Saatchi & Saatchi Advertising</li>
+<li>Sterling Group</li>
+<li>ThinkThru, Inc.</li>
+<li>Warwick Baker & Fiore Inc.</li>
+<li>Warwick Baker O’Neill</li>
+<li>Young & Rubicam</li>
+</ul>
+<h3><a href="#">Alcoholic Beverages</a></h3>
+<ul>
+<li>Berry Bros. & Rudd (UK)</li>
+<li>Brand Bierbrouwerij B.V. (NL)</li>
+<li>Bulmers America Inc.</li>
+<li>Cordorniu International</li>
+<li>E. Remy Martin & Co. (FR)</li>
+<li>Heineken Brouwerijen B.V. (NL)</li>
+<li>Heineken USA</li>
+<li>Heubelein Inc.</li>
+<li>Heubelein Famous Brands (UK)</li>
+<li>The House of Seagram</li>
+<li>HP Bulmer Limited (UK)</li>
+<li>Kronenbourg (FR)</li>
+<li>Labatt’s USA Inc.</li>
+<li>Lindemans Inc.</li>
+<li>Matthew Gloag & Son Limited (UK)</li>
+<li>Matusalem & Company</li>
+<li>The Paddington Corporation (UK)</li>
+<li>Prisma Group</li>
+<li>Remy  Amerique</li>
+<li>Remy Martin (FR)</li>
+<li>Robert Mondavi</li>
+<li>The Seagram Classics Wine Company</li>
+<li>Schffelein & Somerset Co.</li>
+<li>Southcorp Wines North America</li>
+<li>The Stroh Brewery Co.</li>
+<li>United Distillers</li>
+<li>United Distillers & Vintners Canada</li>
+<li>United Distillers & Vintners North America</li>
+<li>Van Munching & Co., Inc.</li>
+<li>William Grant & Sons</li>
+</ul>
+<h3><a href="#">Automotive</a></h3>
+<ul>
+<li>Hyundai North America</li>
+<li>Jaguar North America</li>
+<li>Mercedes Benz of North America, Inc.</li>
+<li>ProCare Automotive Services</li>
+<li>Volvo Cars of North America</li>
+</ul>
+<h3><a href="#">Energy </a></h3>
+<ul>
+<li>American Petroleum Institute</li>
+<li>B.P. Oil Co.</li>
+<li>Chevron USA Inc.</li>
+<li>Consolidation Edison Co. of New York, Inc.</li>
+<li>Council For Solid Waste Solutions</li>
+<li>Exxon Chemical International</li>
+<li>Exxon North America</li>
+<li>Shell Oil of North America</li>
+</ul>
+<h3><a href="#">Entertainment</a></h3>
+<ul>
+<li>Activision Inc.</li>
+<li>CBS Television</li>
+<li>Icon Pictures</li>
+<li>The Tussauds Group (UK)</li>
+</ul>
+<h3><a href="#">Fashion/Apparel/Cosmetics</a></h3>
+<ul>
+<li>Alfred Dunhill Inc.</li>
+<li>Biotherm International (FR)</li>
+<li>Bourjois (FR)</li>
+<li>Chanel Inc.</li>
+<li>Chanel S.A. (FR)</li>
+<li>Chess King</li>
+<li>Chloe</li>
+<li>Coty</li>
+<li>Emporio Armani</li>
+<li>Emporio Armani Fragrance</li>
+<li>Escada Beaute Ltd.</li>
+<li>Estee Lauder</li>
+<li>Etienne Aigner</li>
+<li>Fruit of the Loom</li>
+<li>Giorgio Armani Parfums</li>
+<li>Giorgio Armani Cosmetics</li>
+<li>Guy Larouche Paris (FR)</li>
+<li>Lancaster Group Worldwide, Inc. </li>
+<li>Lancome LLC</li>
+<li>L’Oreal Group (FR)</li>
+<li>Louis Vuitton Malletier</li>
+<li>Marika Hahn Design</li>
+<li>Omega</li>
+<li>Parfumes Christian Dior</li>
+<li>Polo Ralph Lauren</li>
+<li>Prestige & Collections International (FR)</li>
+<li>Rolex Watch U.S.A., Inc.</li>
+<li>Umbro International</li>
+</ul>
+<h3><a href="#">Financial Services</a></h3>
+<ul>
+<li>Aetna Life Insurance Co.</li>
+<li>Alex Sheshumoff & Co. Inc.</li>
+<li>American Express</li>
+<li>AXA</li>
+<li>Chase Bank</li>
+<li>Chase Manhattan Bank</li>
+<li>Cigna</li>
+<li>Citibank N.A.</li>
+<li>Ernst & Young</li>
+<li>Fortis Inc.</li>
+<li>G.E. Capital Small Fleet</li>
+<li>McKinsey & Co. Inc.</li>
+<li>Metropolitan Life</li>
+<li>Paribas (Fr.)</li>
+<li>Prudential Insurance Company of America</li>
+<li>Prudential Securities Incorporated</li>
+<li>Sallie Mae SLMA Inc.</li>
+<li>Sheshunoff Information Services Inc.</li>
+<li>The Travelers Life Insurance Co.</li>
+<li>UNUM Life Insurance Company</li>
+<li>Visa International</li>
+</ul>
+<h3><a href="#">Household/Food/Beverage</a></h3>
+<ul>
+<li>American Frozen Food Institute</li>
+<li>Anco Fine Cheese</li>
+<li>Bongrain USA</li>
+<li>Center for Culinary Development</li>
+<li>ConAgra Grocery Products Inc.</li>
+<li>Crystal d’Arc (FR)</li>
+<li>Crystal Springs Ltd.</li>
+<li>Danone International (FR)</li>
+<li>The Dial Corp.</li>
+<li>Ferrero International SA</li>
+<li>Foodmaker Inc.</li>
+<li>Gardetto’s Inc.</li>
+<li>General Mills Restaurant Division</li>
+<li>Giovanni Rana </li>
+<li>Hunt-Wesson, Inc.</li>
+<li>Kal Kan Inc.</li>
+<li>Masterfoods UK</li>
+<li>Nissin Foods (USA) Co., Inc.</li>
+<li>Proctor & Gamble Inc.</li>
+<li>S.C. Johnson Co.</li>
+<li>Sears Inc.</li>
+<li>Stouffer Foods Corporation</li>
+<li>Suntory Inc. (Japan)</li>
+</ul>
+<h3><a href="#">Not-For-Profit</a></h3>
+<ul>
+<li>Greenpeace USA</li>
+<li>Unicef United Nations Children’s Fund</li>
+</ul>
+<h3><a href="#">Overseas Research Agencies</a></h3>
+<ul>
+<li>Acacia Avenue (UK)</li>
+<li>Actea Marketing (FR)</li>
+<li>Brand Matters (UK)</li>
+<li>CID Werbung & Design (GER)</li>
+<li>Conway Smith Rose (UK)</li>
+<li>Diagnostics Ltd. (UK)</li>
+<li>EUREKA! Research (UK)</li>
+<li>Explorer Marketing Research (IT)</li>
+<li>Firefly (UK)</li>
+<li>Frontiers Research (UK)</li>
+<li>Green Light Research (UK)</li>
+<li>Institute Francais de Demoscopie (FR)</li>
+<li>Ipsos-Insight (IT)</li>
+<li>Ipsos Marketing (FR)</li>
+<li>Jigsaw Strategic Research (AU)</li>
+<li>Kennedy Research (UK)</li>
+<li>Louis Harris France (FR)</li>
+<li>MAI Marktforschung GMBH (GER)</li>
+<li>Millwood Brown (UK)</li>
+<li>Naether Marktforschung (GER)</li>
+<li>The Qualitative Consulting Group (FR)</li>
+<li>Research International (CAN,CR, FR, GER, IT, SP, UK)</li>
+<li>The Research Business International (UK)</li>
+<li>RSL Research Services Ltd (UK)</li>
+<li>Synovate SAS (FR)</li>
+<li>Taylor Nelson/Sofres (FR)</li>
+<li>Territoires (FR)</li>
+<li>The Value Engineers Ltd. (UK)</li>
+<li>Virtual Surveys Ltd. (UK)</li>
+<li>ZED Marketing Research (FR)</li>
+</ul>
+<h3><a href="#">Pharmaceutical</a></h3>
+<ul>
+<li>Bausch & Lomb</li>
+<li>Merke Inc.</li>
+<li>Novartis Animal Health</li>
+<li>Pfizer Inc.</li>
+<li>Rhone Poulenc Rorer Pharmaceuticals Inc.</li>
+<li>Sandoz Inc.</li>
+<li>Shering-Plough Healthcare Products Inc.</li>
+<li>Sun Refining & Marketing Co.</li>
+</ul>
+<h3><a href="#">Publishing</a></h3>
+<ul>
+<li>Field Publications</li>
+<li>Sterling Lord Literistics</li>
+<li>The Wall Street Journal</li>
+</ul>
+<h3><a href="#">Shipping</a></h3>
+<ul>
+<li>UPS</li>
+</ul>
+<h3><a href="#">Telecommunications</a></h3>
+<ul>
+<li>AT&T</li>
+<li>British Telecom North America Inc.</li>
+<li>Ericsson North America</li>
+<li>NYNEX Mobile Communications</li>
+<li>Prism Communications</li>
+<li>Sendo (UK)</li>
+</ul>
+<h3><a href="#">Technology/Electronics</a></h3>
+<ul>
+<li>Activision</li>
+<li>Canon U.S.A. Inc.</li>
+<li>Digital Innovations</li>
+<li>Heuer Time & Electronics Corp.</li>
+<li>Infogames Europe (FR)</li>
+<li>JVC Company of America</li>
+<li>Microsoft</li>
+<li>Nokia USA Inc.</li>
+<li>Panasonic Inc.</li>
+<li>Prism Communications</li>
+<li>Schick Wilkenson-Sword</li>
+<li>Sirona</li>
+<li>Ubisoft</li>
+<li>Victor Company of Japan, Limited</li>
+</ul>
+<h3><a href="#">Tobacco</a></h3>
+<ul>
+<li>Imperial Tobacco Ltd. (CAN)</li>
+<li>Lane Ltd. (UK)</li>
+<li>Pinkerton Tobacco Inc.</li>
+<li>Reynold’s Tobacco Inc.</li>
+<li>Rothman’s International Tobacco Products (Export) B.V. (NL)</li>
+<li>U.S Smokeless Tobacco Brands Inc.</li>
+<li>United States Tobacco Sales and Marketing Company Inc.</li>
+</ul>
+<h3><a href="#">Toys</a></h3>
+<ul>
+<li>Binney & Smith</li>
+<li>Hasbro Inc.</li>
+</ul>
+<h3><a href="#">Travel/Hospitality</a></h3>
+<ul>
+<li>American Express Travel Related Services Company, Inc.</li>
+<li>America West Airlines</li>
+<li>British Airways</li>
+<li>Club Med</li>
+<li>The Darden Group</li>
+<li>General Mills Restaurant Division</li>
+<li>Hilton Hotels Corporation</li>
+<li>Jack In The Box</li>
+<li>Olive Garden</li>
+<li>Red Lobster</li>
+<li>USAir</li>
+</ul>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,269 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+    	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Heads up!</title>
+		
+		<script type="text/javascript"> 
+			 $(document).ready(function(e) {
+				$("#companies h3 a").click( function(e) {
+					var header = $(this).closest('h3');
+					var companyList = header.next('ul');
+					//deselect
+					$(this).closest('h3').siblings('h3').removeClass('selected');
+					//select
+					header.addClass('selected');
+					$("#subcompanies").html( companyList.clone() );
+					//console.log( items );
+					e.preventDefault();
+				})
+			  });
+		</script>
+	</head>
+		
+<body>
+<div>
+<div id="subcompanies"></div>
+<div id="companies">
+<h3><a href="#">Alcoholic Beverages</a></h3>
+<ul>
+<li>Amstel Light</li> 
+<li>Baileys Irish Cream</li> 
+<li>Bass Ale</li>
+<li>Beck’s</li>
+<li>Brand (NL)</li>
+<li>Bulmers (UK)</li>
+<li>Campari</li>
+<li>Chimay (FR)</li>
+<li>Cider Jack</li>
+<li>Chivas Regal</li>
+<li>Corona</li>
+<li>Cutty Sark</li>
+<li>The Famous Grouse</li>
+<li>First Reserve</li>
+<li>George Dickel</li>
+<li>Glenfiddich</li>
+<li>Glengoyne</li>
+<li>Guiness</li>
+<li>Henry Weinhart</li>
+<li>Johnnie Walker Black</li>
+<li>Johnnie Walker Red</li>
+<li>Knockandoo</li>
+<li>Kronenbourg</li>
+<li>Matusalem Rum</li>
+<li>Mickey’s</li>
+<li>Stroh’s</li>
+<li>Stroh’s Light</li>
+<li>Woodpecker</li>
+</ul>
+
+<h3><a href="#">Automotive</a></h3>
+<ul>
+<li>BP</li>
+<li>Chevron </li>
+<li>Exxon</li>
+<li>Hyundai</li>
+<li>Jaguar</li>
+<li>Mercedes Benz</li>
+<li>ProCare</li>
+<li>Shell</li>
+<li>Volvo</li>
+</ul>
+<h3><a href="#">Entertainment</a></h3>
+<ul>
+<li>CBS Sports</li>
+<li>Madame Tussauds Wax Museum</li>
+</ul>
+<h3><a href="#">Fashion/Apparel/Cosmetics</a></h3>
+<ul>
+<li>Aqua di Gio</li>
+<li>Aqua Velva</li>
+<li>Armani</li></li>
+<li>Bally</li>
+<li>Baume & Mercier</li>
+<li>Biotherm</li>
+<li>Bourjois</li>
+<li>Brut</li>
+<li>Cacharel Girl</li>
+<li>Calvin Klein</li>
+<li>Chanel No. 5</li>
+<li>Chloe</li>
+<li>Chess King</li>
+<li>Christian Dior</li>
+<li>Clinique</li>
+<li>Coty</li>
+<li>Drakkar Noir</li>
+<li>Dunhill</li>
+<li>Egoiste</li>
+<li>Emporio Armani</li>
+<li>Escada</li>
+<li>Estee Lauder</li>
+<li>Etienne Aigner</li>
+<li>Farrari </li>
+<li>Giorgio Armani</li>
+<li>Guy Larouche</li>
+<li>Joop</li>
+<li>Lancome</li>
+<li>L’Oreal</li>
+<li>Louis Vuitton </li>
+<li>Mack</li>
+<li>Marika Hahn</li>
+<li>Miracle</li>
+<li>Old Spice</li>
+<li>Omega</li>
+<li>Polo</li>
+<li>Priscilla Presley</li>
+<li>Ralph Lauren</li>
+<li>Rolex</li>
+<li>Shishido</li>
+<li>Tag Heuer</li>
+<li>Thierry Mugler</li>
+<li>Umbro</li>
+<li>180’s</li>
+</ul>
+<h3><a href="#">Financial Services</a></h3>
+<ul>
+<li>Aetna </li>
+<li>Alex Sheshunoff </li>
+<li>American Express</li>
+<li>AXA</li>
+<li>Chase Manhattan Bank</li>
+<li>Cigna</li>
+<li>Citibank </li>
+<li>Ernst & Young</li>
+<li>Fortis </li>
+<li>G.E. Capital </li>
+<li>McKinsey & Co.</li>
+<li>Metropolitan Life</li>
+<li>Paribas</li>
+<li>Prudential Insurance </li>
+<li>Prudential Securities </li>
+<li>Sallie Mae </li>
+<li>Travelers </li>
+<li>UNUM </li>
+<li>Visa</li>
+</ul>
+<h3><a href="#">Household/Food/Beverage</a></h3>
+<ul>
+<li>Alouette</li>
+<li>Boar’s Head</li>
+<li>Butterball</li>
+<li>Chavrie</li>
+<li>Coeur de Lion</li>
+<li>Crest</li>
+<li>Crystal Springs</li>
+<li>Cup-A-Soup</li>
+<li>Dannon</li>
+<li>Dial</li>
+<li>Ferrero Rocher</li>
+<li>Frito-Lay</li>
+<li>Giovanni Rana</li>
+<li>Glade </li>
+<li>Gulden’s</li>
+<li>Healthy Choice</li>
+<li>Hellman’s</li>
+<li>Hunt’s</li>
+<li>Il Villaggio</li>
+<li>IYEMON CHA</li>
+<li>Kal Kan</li>
+<li>Knot’s Berry Farm</li>
+<li>La Choy</li>
+<li>Montrachet</li>
+<li>Mikasa</li>
+<li>Nutella</li>
+<li>Orville Redenbacher</li>
+<li>Peter Pan</li>
+<li>Petigree</li>
+<li>Pocket Coffee</li>
+<li>Rosarita</li>
+<li>Tic Tac</li>
+<li>Tic Tac Bold</li>
+<li>Utz</li>
+<li>Valley Forge</li>
+<li>Wesson Oil</li>
+<li>Whiskas</li>
+<li>Wolfgang Puck</li>
+</ul>
+<h3><a href="#">Not-For-Profit</a></h3>
+<ul>
+<li>Unicef Greeting Cards</li>
+</ul>
+<h3><a href="#">Pharmaceuticals</a></h3>
+<ul>
+<li>Interceptor</li>
+<li>Norwich</li>
+<li>Pepto-Bismol</li>
+<li>Sentinel</li>
+</ul>
+<h3><a href="#">Publishing</a></h3>
+<ul>
+<li>The Weekly Reader</li>
+<li>The Wall Street Journal</li>
+</ul>
+<h3><a href="#">Shipping</a></h3>
+<ul>
+<li>UPS</li>
+</ul>
+<h3><a href="#">Technology/Electronics</a></h3>
+<ul>
+<li>Canon </li>
+<li>Driver</li>
+<li>Fisher</li>
+<li>JVC </li>
+<li>Kelly Slater Pro Surfer</li>
+<li>Matt Hoffman’s Pro BMX</li>
+<li>Microsoft</li>
+<li>Panasonic</li>
+<li>Pentax</li>
+<li>Pioneer</li>
+<li>Race of Champions</li>
+<li>Samsung</li>
+<li>Schick</li>
+<li>Sirona</li>
+<li>Skip Doctor</li>
+<li>Tag Heuer</li>
+<li>Tony Hawk Pro Skater 3</li>
+<li>Tony Hawk Pro Skater 4</li>
+<li>X-Box</li>
+</ul>
+<h3><a href="#">Telecommunications</a></h3>
+<ul>
+<li>Compaq</li>
+<li>Motorola</li>
+<li>Nokia</li>
+<li>Panasonic</li>
+<li>Samsung</li>
+<li>Sony</li>
+</ul>
+<h3><a href="#">Tobacco</a></h3>
+<ul>
+<li>Camel</li>
+<li>Copenhagen</li>
+<li>Copenhagen Pouches</li>
+<li>Drum</li>
+<li>Red Man</li>
+<li>Rothman’s</li>
+<li>Skoal</li>
+<li>Skoal Pouches</li>
+</ul>
+<h3><a href="#">Toys</a></a></h3>
+<ul>
+<li>Crayola</li>
+</ul>
+<h3><a href="#">Travel/Hospitality</a></h3>
+<ul>
+<li>American Express</li>
+<li>America West</li>
+<li>British Airways</li>
+<li>Club Med</li>
+<li>Hilton</li>
+<li>Jack In The Box</li>
+<li>Olive Garden</li>
+<li>Red Lobster</li>
+<li>USAir</li>
+<li>Wolfgang Puck</li>
+</ul>
+
+</div>
+</div>
+</body>
+</html>

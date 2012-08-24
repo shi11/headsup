@@ -1,0 +1,151 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+    	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Heads up!</title>
+		<link type="text/css" href="css/styles.css" rel="stylesheet">
+        
+		<!--setup google analytics
+		<script type="text/javascript"> 
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-56538-1']);
+            (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+            })();
+        </script>-->
+		 
+    	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.js"></script> 
+        <script type="text/javascript" src="jquery/jquery.address-1.3.2.min.js"></script>
+		 
+		 <script type="text/javascript">
+		 	
+			//var ROOT = "http://localhost/headsupresearch/new/";
+			var ROOT = "http://www.headsupresearch.com/new/";
+ 
+ 			$(function() {
+				
+	            $.address.init(function(event) {
+					//debugger;
+	                // Initializes the plugin
+	                $('.nav a').address();
+					createNav();
+					draw();
+	            }).internalChange(function(event) {
+					loadContent(event.value);
+				}).externalChange(function(event) {
+					//first page load is sending a /, so adjusting...
+					if (event.value == "/") {
+						loadContent("home.html");
+					}else{
+						loadContent(event.value);
+					}
+				});
+				
+				var loadContent = function(htmlLocation) {
+					$('#content').load(ROOT+htmlLocation);
+				}
+				
+				var loadImage = function(imageLocation) {
+					$('#image').attr("src", imageLocation);
+				}
+	
+				/**
+				 * create nav
+				 */
+				var createNav = function(){
+					var navItems = [];
+					var sections = [];
+					xhr=$.getJSON(ROOT+'json/sections.json', function(data){
+						$.each(data.sections, function(i,section) {
+							sections.push(section);
+							navItems.push('<li id="section'+i+'"><a href='+section.src+'>'+section.name+'</a></li>');
+						})
+						
+						$('.nav').append(navItems.join(''));
+						
+						$('.nav a').click( function() {  
+							var sectionId = $(this).closest('li').attr('id');
+							var listItem = document.getElementById(sectionId);
+							var sectionIndex = $('li').index(listItem);
+							
+							//change value
+							$.address.value($(this).attr('href'));
+						    loadImage(sections[sectionIndex].image);
+							
+							//deselect links
+							console.log( $(this) );
+							//deselect links
+							$(this).closest('ul').find('a').removeClass('selected');
+							//set selected
+							$(this).addClass('selected');
+						});
+						
+					});
+				}
+				
+				var draw = function draw(){
+					var canvas = document.getElementById("canvas");
+					if (canvas.getContext) {
+						var ctx = canvas.getContext("2d");
+						
+						//TODO: listen for resize and update
+						//canvas.width = $(window).width();
+					//	canvas.height = $(document).height();
+						
+						for (var i = 0; i < 100; i++) {
+							ctx.lineWidth = 1;
+							ctx.strokeStyle = "#66C8E8";
+							//vertical
+							ctx.beginPath();
+							ctx.moveTo(15 * i, 0);
+							ctx.lineTo(15 * i, canvas.height);
+							ctx.closePath();
+							ctx.stroke();
+							//horizontal
+							ctx.beginPath();
+							ctx.moveTo(0, 15 * i);
+							ctx.lineTo(canvas.width, 15 * i);
+							ctx.closePath();
+							ctx.stroke();
+						}
+					}
+				}
+
+			});
+ 
+            // Loads and populates the page data
+            /*$.ajax({
+                cache: false,
+                complete: function(XMLHttpRequest, textStatus) {
+                    var data = $.parseJSON(XMLHttpRequest.responseText);
+                    $.address.title(data.title);
+                    $('.content').html(data.content);
+                    $('.page').show();
+                },
+                url: value
+            });
+            // Hides the page during initialization
+            document.write('<style type="text/css"> .page { display: none; } </style>');
+            */
+        </script> 
+		
+    </head>
+    <body>
+		<div id="outermain">
+			<div id="innermain">
+				<canvas id="canvas" width="700" height="1000"></canvas>
+				<div class="page"> 
+					<div id="header">
+						<image src="images/headsuplogo.gif">
+			            <ul class="nav"></ul> 
+						<img id="image" />
+					</div>
+		            <div id="content">Loading</div> 
+		        </div>
+			</div>
+		</div>
+    </body> 
+</html>

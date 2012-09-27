@@ -210,7 +210,7 @@ ul li.twolines {
   margin: -7px 0 24px;
   float: left;
 }
-.clients .button {
+.clientsExp .button {
   color: #fff;
   font-size: 15px;
   font-weight: 700;
@@ -236,6 +236,8 @@ ul li.twolines {
 }
 .clients .bar {
   margin-bottom: 18px;
+  width: 100%;
+  height: 80px;
 }
 .clientsExp {
   margin: -2px 0 -30px;

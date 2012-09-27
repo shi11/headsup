@@ -101,13 +101,14 @@ ul li.twolines {
 }
 .mainNav {
   background: url(../../images/texture_bg.jpg) repeat;
-  height: 120px;
-  margin-bottom: 43px;
+  position: fixed;
+  top: 1;
+  z-index: 5000;
 }
 .mainNav ul {
   font-size: 14px;
   font-weight: 700;
-  margin: 50px 0 0 0;
+  margin: 42px 0;
   float: right;
 }
 .mainNav ul li {
@@ -122,14 +123,15 @@ ul li.twolines {
   color: #f0394f;
 }
 .mainNav .logo {
-  margin-top: 14px;
+  margin-top: 8px;
 }
 .mainNav .logo span {
   display: inline-block;
   *display: inline;
   width: 216px;
   height: 85px;
-  background: url(.././images/logo.png) 0 0 no-repeat;
+  background: url(../../images/logo.png) 0 0 no-repeat;
+  background-size: 100%;
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
@@ -137,6 +139,10 @@ ul li.twolines {
 }
 .mainNav .svg .logo span {
   background: none;
+}
+.sticky {
+  position: fixed;
+  top: 0;
 }
 .wrap {
   width: 100%;
@@ -165,7 +171,10 @@ ul li.twolines {
   margin: 18px 0 24px 0;
 }
 .bioScott {
-  background: rgba(0, 0, 0, 0.2);
+  background-image: url(../../images/test.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
 }
 .bioScott .columns {
   padding: 67px 0 126px;
@@ -226,11 +235,11 @@ ul li.twolines {
   border-bottom: 1px solid #91364c;
 }
 .clients .bar {
-  display: none;
   margin-bottom: 18px;
 }
 .clientsExp {
   margin: -2px 0 -30px;
+  display: none;
 }
 .clientsExp .bar {
   margin-top: 24px;

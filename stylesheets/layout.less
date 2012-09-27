@@ -239,39 +239,51 @@ ul li {
         margin:-7px 0 24px;
         float:left;
     }
-
-    .button {
-        color:#fff;
-        font-size: 15px;
-        font-weight:700;
-        line-height: 50px;
-        text-align: center;
-        text-transform:uppercase;
-        text-shadow:0 1px 1px rgba(0, 0, 0, .4);
-        background: #eee;
-        background-image: -webkit-gradient(linear, left top, left bottom, from(#da062a), to(#e0314f));
-        background-image: -webkit-linear-gradient(top, #e0314f, #da062a);
-        background-image: -moz-linear-gradient(top, #e0314f, #da062a);
-        background-image: -ms-linear-gradient(top, #e0314fart, #da062a);
-        background-image: -o-linear-gradient(top, #e0314f, #da062a);
-        -moz-border-radius: 1px;
-        -webkit-border-radius: 1px;
-        border-radius: 1px;
-        width:170px;
-        height: 50px;
-        display:block;
-        margin:11px auto 0;
-        border-top: 1px solid #ef92a2;
-        border-bottom:1px solid #91364c;
-    }
-
     .bar {  margin-bottom: 18px; }
 
+}
+a, a:visited {
+    color: @blue;
+    text-decoration: none;
+    outline: 0;
+    -webkit-transition: color .3s;
+    -moz-transition: color .3s;
+    -o-transition: color .3s;
+    -ms-transition: color .3s;
+    transition: color .3s;
+}
+
+a.button, a.button:visited {
+    color:#fff;
+    font-size: 15px;
+    font-weight:700;
+    line-height: 50px;
+    text-align: center;
+    text-transform:uppercase;
+    text-shadow:0 1px 1px rgba(0, 0, 0, .4);
+    background: #eee;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#da062a), to(#e0314f));
+    background-image: -webkit-linear-gradient(top, #e0314f, #da062a);
+    background-image: -moz-linear-gradient(top, #e0314f, #da062a);
+    background-image: -ms-linear-gradient(top, #e0314fart, #da062a);
+    background-image: -o-linear-gradient(top, #e0314f, #da062a);
+    -moz-border-radius: 1px;
+    -webkit-border-radius: 1px;
+    border-radius: 1px;
+    width:170px;
+    height: 50px;
+    display:block;
+    margin:11px auto 0;
+    border-top: 1px solid #ef92a2;
+    border-bottom:1px solid #91364c;
+    &:hover, &:focus {
+        color:@yellow;
+
+    }
 }
 
 .clientsExp {
     margin: -2px 0 -30px;
-    display:none;
     .bar { margin-top: 24px; }
 }
 

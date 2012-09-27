@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8cc462a1-7502-4f05-82eb-6beef1edad13" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/css/layout.css" afterPath="$PROJECT_DIR$/stylesheets/css/layout.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/layout.less" afterPath="$PROJECT_DIR$/stylesheets/layout.less" />
     </list>
@@ -28,7 +29,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="457" column="34" selection-start="18903" selection-end="18903" vertical-scroll-proportion="-23.72">
+            <state line="358" column="43" selection-start="15621" selection-end="15621" vertical-scroll-proportion="-162.96">
               <folding />
             </state>
           </provider>
@@ -46,7 +47,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/Downloads/demo/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="83" column="35" selection-start="3252" selection-end="3252" vertical-scroll-proportion="0.0">
+            <state line="83" column="35" selection-start="3252" selection-end="3252" vertical-scroll-proportion="-0.64">
               <folding />
             </state>
           </provider>
@@ -91,7 +92,7 @@
       <file leaf-file-name="layout.less" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/stylesheets/layout.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="235" column="37" selection-start="4023" selection-end="4023" vertical-scroll-proportion="0.13403141">
+            <state line="279" column="21" selection-start="5300" selection-end="5300" vertical-scroll-proportion="0.9329843">
               <folding />
             </state>
           </provider>
@@ -331,13 +332,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Downloads/demo/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="35" selection-start="3252" selection-end="3252" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Downloads/demo/styles.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
@@ -357,13 +351,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="457" column="34" selection-start="18903" selection-end="18903" vertical-scroll-proportion="-23.72">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/javascripts/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="28" column="35" selection-start="664" selection-end="664" vertical-scroll-proportion="0.0">
@@ -371,9 +358,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="358" column="43" selection-start="15621" selection-end="15621" vertical-scroll-proportion="-162.96">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/demo/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="83" column="35" selection-start="3252" selection-end="3252" vertical-scroll-proportion="-0.64">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/stylesheets/layout.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="235" column="37" selection-start="4023" selection-end="4023" vertical-scroll-proportion="0.13403141">
+        <state line="279" column="21" selection-start="5300" selection-end="5300" vertical-scroll-proportion="0.9329843">
           <folding />
         </state>
       </provider>

@@ -210,7 +210,22 @@ ul li.twolines {
   margin: -7px 0 24px;
   float: left;
 }
-.clients .button {
+.clients .bar {
+  margin-bottom: 18px;
+}
+a,
+a:visited {
+  color: #4f77af;
+  text-decoration: none;
+  outline: 0;
+  -webkit-transition: color .3s;
+  -moz-transition: color .3s;
+  -o-transition: color .3s;
+  -ms-transition: color .3s;
+  transition: color .3s;
+}
+a.button,
+a.button:visited {
   color: #fff;
   font-size: 15px;
   font-weight: 700;
@@ -234,8 +249,11 @@ ul li.twolines {
   border-top: 1px solid #ef92a2;
   border-bottom: 1px solid #91364c;
 }
-.clients .bar {
-  margin-bottom: 18px;
+a.button:hover,
+a.button:visited:hover,
+a.button:focus,
+a.button:visited:focus {
+  color: #f8ef67;
 }
 .clientsExp {
   margin: -2px 0 -30px;

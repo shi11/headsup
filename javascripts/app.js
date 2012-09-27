@@ -47,7 +47,7 @@ $(document).ready(function() {
             var $clientsContainer = $(".clientsExp .container");
             if ($clientsContainer.is(":hidden")) {
                 $clientsContainer.slideDown("slow");
-                this.innerText = 'See Less Clients';
+                this.innerText = 'See Fewer Clients';
             } else {
                 $clientsContainer.slideUp("slow");
                 this.innerText = 'See More Clients';

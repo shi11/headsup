@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8cc462a1-7502-4f05-82eb-6beef1edad13" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/css/layout.css" afterPath="$PROJECT_DIR$/stylesheets/css/layout.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/layout.less" afterPath="$PROJECT_DIR$/stylesheets/layout.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascripts/app.js" afterPath="$PROJECT_DIR$/javascripts/app.js" />
     </list>
     <ignored path="Skeleton.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,7 +27,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="358" column="43" selection-start="15621" selection-end="15621" vertical-scroll-proportion="-162.96">
+            <state line="335" column="82" selection-start="14656" selection-end="14664" vertical-scroll-proportion="-5.8235292">
               <folding />
             </state>
           </provider>
@@ -71,10 +69,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="app.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/javascripts/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="35" selection-start="664" selection-end="664" vertical-scroll-proportion="0.0">
+            <state line="49" column="43" selection-start="1198" selection-end="1198" vertical-scroll-proportion="0.7036649">
               <folding />
             </state>
           </provider>
@@ -89,10 +87,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="layout.less" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="layout.less" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/stylesheets/layout.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="279" column="21" selection-start="5300" selection-end="5300" vertical-scroll-proportion="0.9329843">
+            <state line="279" column="21" selection-start="5300" selection-end="5300" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -113,8 +111,8 @@
       <list>
         <option value="$PROJECT_DIR$/javascripts/waypoints.js" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/javascripts/app.js" />
         <option value="$PROJECT_DIR$/stylesheets/layout.less" />
+        <option value="$PROJECT_DIR$/javascripts/app.js" />
       </list>
     </option>
   </component>
@@ -351,16 +349,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/javascripts/app.js">
+    <entry file="file://$PROJECT_DIR$/stylesheets/layout.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="35" selection-start="664" selection-end="664" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="358" column="43" selection-start="15621" selection-end="15621" vertical-scroll-proportion="-162.96">
+        <state line="279" column="21" selection-start="5300" selection-end="5300" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -372,9 +363,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/stylesheets/layout.less">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="279" column="21" selection-start="5300" selection-end="5300" vertical-scroll-proportion="0.9329843">
+        <state line="335" column="82" selection-start="14656" selection-end="14664" vertical-scroll-proportion="-5.8235292">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascripts/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="43" selection-start="1198" selection-end="1198" vertical-scroll-proportion="0.7036649">
           <folding />
         </state>
       </provider>

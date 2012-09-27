@@ -2,28 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8cc462a1-7502-4f05-82eb-6beef1edad13" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/brands/1000px-American_Express_logo.svg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/brands/1000px-BP_Logo.svg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/brands/1000px-British_Airways_Logo.svg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/brands/1000px-Pfizer_logo.svg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/brands/37514-hi-Moet_Chandon_logo.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/brands/640px-Logo_Bialetti.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/brands/Bulgari_logo.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/brands/Canon_WEB_logo.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/brands/CorporateDownload_Cunard_logo_bw_April2012.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/brands/Illy_logo.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/brands/Ubisoft.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/brands/Zappos.com-logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/brands/glyphicons-halflings-white.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/brands/glyphicons-halflings.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/brands/loreal.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/brands/tictacLogo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/headsUpGrid.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javascripts/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/stylesheets/css/bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascripts/app.js" afterPath="$PROJECT_DIR$/javascripts/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/css/layout.css" afterPath="$PROJECT_DIR$/stylesheets/css/layout.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/layout.less" afterPath="$PROJECT_DIR$/stylesheets/layout.less" />
     </list>
     <ignored path="Skeleton.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -90,10 +70,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/javascripts/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="0" selection-start="1364" selection-end="1364" vertical-scroll-proportion="0.8376963">
+            <state line="28" column="35" selection-start="664" selection-end="664" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -108,10 +88,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="layout.less" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="layout.less" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/stylesheets/layout.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="122" column="4" selection-start="2124" selection-end="2124" vertical-scroll-proportion="0.0">
+            <state line="235" column="37" selection-start="4023" selection-end="4023" vertical-scroll-proportion="0.13403141">
               <folding />
             </state>
           </provider>
@@ -131,9 +111,9 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/javascripts/waypoints.js" />
-        <option value="$PROJECT_DIR$/stylesheets/layout.less" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/javascripts/app.js" />
+        <option value="$PROJECT_DIR$/stylesheets/layout.less" />
       </list>
     </option>
   </component>
@@ -377,13 +357,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/stylesheets/layout.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="122" column="4" selection-start="2124" selection-end="2124" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="457" column="34" selection-start="18903" selection-end="18903" vertical-scroll-proportion="-23.72">
@@ -393,7 +366,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/javascripts/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="0" selection-start="1364" selection-end="1364" vertical-scroll-proportion="0.8376963">
+        <state line="28" column="35" selection-start="664" selection-end="664" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stylesheets/layout.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="235" column="37" selection-start="4023" selection-end="4023" vertical-scroll-proportion="0.13403141">
           <folding />
         </state>
       </provider>

@@ -48,7 +48,7 @@ h1 {
 h2 {
   font-size: 20px;
   line-height: 36px;
-  margin-bottom: 20px;
+  margin-bottom: 32px;
 }
 h2 span {
   font-size: 30px;
@@ -76,17 +76,17 @@ h4 em {
 h4 span {
   background: #a7d1e4;
   height: 6px;
-  width: 214px;
+  width: 184px;
   margin-top: 17px;
   float: left;
 }
 h4.second span {
   background: #f8ef67;
-  width: 188px;
+  width: 201px;
 }
 h4.third span {
   background: #f0394f;
-  width: 200px;
+  width: 187px;
 }
 p {
   margin-bottom: 24px;
@@ -101,14 +101,15 @@ ul li.twolines {
 }
 .mainNav {
   background: url(../../images/texture_bg.jpg) repeat;
+  font-weight: 300;
+  height: 120px;
   position: fixed;
   top: 1;
   z-index: 5000;
 }
 .mainNav ul {
   font-size: 14px;
-  font-weight: 700;
-  margin: 42px 0;
+  margin: 52px 0 0 0;
   float: right;
 }
 .mainNav ul li {
@@ -118,12 +119,23 @@ ul li.twolines {
 }
 .mainNav ul li a {
   color: #3d444e;
+  font-weight: 700;
 }
 .mainNav ul li a:hover {
   color: #f0394f;
 }
+.mainNav ul li em {
+  font-weight: 700;
+}
+.mainNav .logoLink {
+  position: absolute;
+  width: 216px;
+  height: 85px;
+  display: block;
+}
 .mainNav .logo {
-  margin-top: 8px;
+  margin-top: 14px;
+  display: none;
 }
 .mainNav .logo span {
   display: inline-block;
@@ -152,6 +164,9 @@ ul li.twolines {
   margin-bottom: 22px;
   float: left;
 }
+.mast .topGap {
+  height: 163px;
+}
 .mast h2 {
   margin-bottom: 20px;
 }
@@ -168,19 +183,21 @@ ul li.twolines {
 }
 .mast + .bar {
   height: 48px;
-  margin: 18px 0 24px 0;
+  margin: 42px 0 -24px 0;
 }
 .bioScott {
   background-image: url(../../images/test.jpg);
+  background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 .bioScott .columns {
   padding: 67px 0 126px;
 }
 .bioScott + .bar {
-  height: 145px;
+  height: 134px;
   margin-top: -96px;
 }
 .bioScott + .bar + .bar {
@@ -188,17 +205,23 @@ ul li.twolines {
   margin-top: -121px;
 }
 .bioAnnie {
-  background: rgba(0, 0, 0, 0.2);
+  background-image: url(../../images/test_b.jpg);
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.2);
   margin-top: -49px;
 }
 .bioAnnie .columns {
   padding: 67px 0 42px;
 }
 .bioAnnie + .bar {
+  height: 73px;
   margin-top: -25px;
 }
 .clients .container {
-  padding-top: 44px;
+  padding-top: 68px;
 }
 .clients .eight {
   padding-top: 10px;
@@ -259,33 +282,44 @@ a.button:visited:focus {
   margin: -2px 0 -30px;
 }
 .clientsExp .bar {
+  margin-top: 52px;
+}
+.clientsExp .bar + .bar {
+  height: 24px;
   margin-top: 24px;
 }
+.clientsExp .container {
+  margin-top: 48px;
+}
+.services .container {
+  margin-top: 47px;
+}
 .services .eight {
-  padding-top: 50px;
+  padding-top: 36px;
 }
 .services .four {
+  height: 265px;
   text-align: center;
 }
 .services .four img {
   margin: 0 auto;
 }
 .services .one-third {
-  margin-top: 11px;
+  margin-top: 13px;
 }
 .services + .bar {
   height: 5px;
-  margin-top: 25px;
+  margin-top: 49px;
 }
 .services + .bar + .bar {
   height: 39px;
   margin-top: 5px;
 }
-.specialties {
-  margin-top: -25px;
-}
 .specialties .four {
   margin-bottom: 18px;
+}
+.specialties .four img {
+  margin-top: -21px;
 }
 .specialties .eight {
   padding-top: 69px;
@@ -296,7 +330,7 @@ a.button:visited:focus {
 }
 .specialties + .bar + .bar {
   height: 72px;
-  margin-top: 10px;
+  margin-top: 23px;
 }
 .contact {
   background: rgba(0, 0, 0, 0.1);
@@ -307,7 +341,7 @@ a.button:visited:focus {
   margin-bottom: 21px;
 }
 .contact .container {
-  padding-top: 92px;
+  padding-top: 116px;
 }
 .contact + .bar {
   margin-top: -25px;

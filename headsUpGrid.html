@@ -10,14 +10,30 @@
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 <script src="javascripts/bootstrap.min.js"></script>
 
+<script type="text/javascript">
+    $(function() {
+        // Handler for .ready() called.
+        $("#clickMe").click(function () {
+            if ($("#gallery").is(":hidden")) {
+             $("#gallery").slideDown("slow");
+             } else {
+            $("#gallery").hide();
+            }
+        });
+    });
+</script>
+
     <div class="container">
         <div class="row">
-        <div class="span12">
-            <h1>Heads up Brands</h1>
+            <div class="span12">
+                <h1>Heads up Brands</h1>
+            </div>
         </div>
+        <div id="clickMe">
+            Click Me!
         </div>
         <!--todo center items on row -->
-            <div class="row" style="position: absolute;top:10%;height: 10em;">
+            <div class="row" id="gallery" style="position: absolute;top:10%;height: 10em;">
                 <div class="span3">
                     <img src="images/brands/CorporateDownload_Cunard_logo_bw_April2012.jpeg" alt="cunard">
                 </div>

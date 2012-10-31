@@ -59,7 +59,7 @@ h1 {
 h2 {
     font-size: 20px;
     line-height: 36px;
-    margin-bottom:20px;
+    margin-bottom:32px;
 
     span { font-size: 30px;}
 }
@@ -90,19 +90,19 @@ h4 {
     span {
         background:@ltblue;
         height: 6px;
-        width:214px;
+        width:184px;
         margin-top: 17px;
         float:left;
     }
 
     &.second span {
         background: @yellow;
-        width: 188px;
+        width: 201px;
     }
 
     &.third span {
         background: @red;
-        width: 200px;
+        width: 187px;
     }
 }
 
@@ -120,14 +120,15 @@ ul li {
 
 .mainNav {
     background: url(../../images/texture_bg.jpg) repeat;
+    font-weight:300;
+    height:120px;
     position:fixed;
     top:1;
     z-index: 5000;
 
     ul {
         font-size:14px;
-        font-weight:700;
-        margin:42px 0;
+        margin:52px 0 0 0;
         float:right;
 
         li {
@@ -137,13 +138,24 @@ ul li {
 
             a {
                 color:#3d444e;
+                font-weight:700;
                 &:hover { color:@red;}
             }
+
+            em{font-weight:700;}
         }
     }
 
+    .logoLink {
+        position:absolute;
+        width:216px;
+        height:85px;
+        display: block;
+    }
+
     .logo {
-        margin-top: 8px;
+        margin-top: 14px;
+        display:none;
 
         span {
             display: inline-block;
@@ -180,6 +192,8 @@ ul li {
 }
 
 .mast {
+    .topGap { height:163px; }
+
     h2 { margin-bottom:20px; }
 
     .four {
@@ -188,6 +202,7 @@ ul li {
 
         p {
             margin-bottom:17px;
+
             clear:both;
         }
 
@@ -196,20 +211,22 @@ ul li {
 
     & + .bar {
         height:48px;
-        margin: 18px 0 24px 0;
+        margin: 42px 0 -24px 0;
     }
 }
 
 .bioScott {
     background-image: url(../../images/test.jpg);
+    background-position:center;
     -webkit-background-size:cover;
     -moz-background-size:cover;
     background-size:cover;
+    background-color:rgba(0,0,0,.2);
 
     .columns { padding: 67px 0 126px; }
 
     & + .bar {
-        height: 145px;
+        height: 134px;
         margin-top:-96px;
         & + .bar {
             height:49px;
@@ -219,16 +236,21 @@ ul li {
 }
 
 .bioAnnie {
-    background:rgba(0,0,0,.2);
+    background-image: url(../../images/test_b.jpg);
+    background-position:center;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    background-size:cover;
+    background-color:rgba(0,0,0,.2);
     margin-top: -49px;
 
     .columns { padding: 67px 0 42px; }
 
-    & + .bar { margin-top: -25px; }
+    & + .bar {height: 73px;  margin-top: -25px; }
 }
 
 .clients {
-    .container { padding-top: 44px; }
+    .container { padding-top: 68px; }
 
     .eight { padding-top:10px; }
 
@@ -284,20 +306,29 @@ a.button, a.button:visited {
 
 .clientsExp {
     margin: -2px 0 -30px;
-    .bar { margin-top: 24px; }
+    .bar {
+        margin-top: 52px;
+        &+ .bar {
+            height:24px;
+            margin-top:24px;
+        }
+    }
+    .container { margin-top:48px;}
 }
 
 .services {
-    .eight { padding-top:50px; }
+    .container { margin-top: 47px; }
+    .eight { padding-top:36px; }
     .four {
+        height: 265px;
         text-align: center;
         img { margin:0 auto;}
     }
-    .one-third { margin-top:11px;}
+    .one-third { margin-top:13px;}
 
     &+ .bar {
         height:5px;
-        margin-top:25px;
+        margin-top:49px;
         &+ .bar {
             height:39px;
             margin-top: 5px;
@@ -306,8 +337,10 @@ a.button, a.button:visited {
 }
 
 .specialties {
-    margin-top: -25px;
-    .four { margin-bottom: 18px; }
+    .four {
+        margin-bottom: 18px;
+        img { margin-top:-21px; }
+    }
     .eight { padding-top:69px; }
 
     &+ .bar {
@@ -316,7 +349,7 @@ a.button, a.button:visited {
 
         &+ .bar {
             height:72px;
-            margin-top:10px;
+            margin-top:23px;
         }
     }
 }
@@ -328,7 +361,7 @@ a.button, a.button:visited {
 
     h1 { margin-bottom:21px; }
 
-    .container{ padding-top:92px; }
+    .container{ padding-top:116px; }
 
     &+ .bar { margin-top: -25px;}
 }

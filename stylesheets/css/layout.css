@@ -82,11 +82,11 @@ h4 span {
 }
 h4.second span {
   background: #f8ef67;
-  width: 201px;
+  width: 198px;
 }
 h4.third span {
   background: #f0394f;
-  width: 187px;
+  width: 186px;
 }
 p {
   margin-bottom: 24px;
@@ -135,7 +135,6 @@ ul li.twolines {
 }
 .mainNav .logo {
   margin-top: 14px;
-  display: none;
 }
 .mainNav .logo span {
   display: inline-block;
@@ -197,8 +196,8 @@ ul li.twolines {
   padding: 67px 0 126px;
 }
 .bioScott + .bar {
-  height: 134px;
-  margin-top: -96px;
+  height: 145px;
+  margin-top: -97px;
 }
 .bioScott + .bar + .bar {
   height: 49px;
@@ -211,10 +210,10 @@ ul li.twolines {
   -moz-background-size: cover;
   background-size: cover;
   background-color: rgba(0, 0, 0, 0.2);
-  margin-top: -49px;
+  margin-top: -48px;
 }
 .bioAnnie .columns {
-  padding: 67px 0 42px;
+  padding: 80px 0 42px;
 }
 .bioAnnie + .bar {
   height: 73px;
@@ -282,17 +281,17 @@ a.button:visited:focus {
   margin: -2px 0 -30px;
 }
 .clientsExp .bar {
-  margin-top: 52px;
+  margin-top: 36px;
 }
 .clientsExp .bar + .bar {
   height: 24px;
   margin-top: 24px;
 }
 .clientsExp .container {
-  margin-top: 48px;
+  margin-top: 37px;
 }
 .services .container {
-  margin-top: 47px;
+  margin-top: 63px;
 }
 .services .eight {
   padding-top: 36px;
@@ -316,16 +315,16 @@ a.button:visited:focus {
   margin-top: 5px;
 }
 .specialties .four {
-  margin-bottom: 18px;
+  margin-bottom: 39px;
 }
 .specialties .four img {
   margin-top: -21px;
 }
 .specialties .eight {
-  padding-top: 69px;
+  padding-top: 43px;
 }
 .specialties + .bar {
-  height: 38px;
+  height: 48px;
   margin-top: 2px;
 }
 .specialties + .bar + .bar {
@@ -344,7 +343,7 @@ a.button:visited:focus {
   padding-top: 116px;
 }
 .contact + .bar {
-  margin-top: -25px;
+  margin-top: -41px;
 }
 /* #Page Styles
 ================================================== */

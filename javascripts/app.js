@@ -42,17 +42,18 @@ $(document).ready(function() {
 
     /* slide clients expanded */
     $(".clientsExp .container").hide();
-    $(".clientsExp .button").click(
-        function () {
-            var $clientsContainer = $(".clientsExp .container");
-            if ($clientsContainer.is(":hidden")) {
-                $clientsContainer.slideDown("slow");
-                this.innerText = 'See Fewer Clients';
-            } else {
-                $clientsContainer.slideUp("slow");
-                this.innerText = 'See More Clients';
-            }
-        });
+    $(".clientsExp .button").toggle(function(){openClientsExp(this)}, function(){closeClientsExp(this)});
+    var $clientsContainer = $(".clientsExp .container");
+
+    function openClientsExp(el){
+        $clientsContainer.slideDown("slow");
+        el.innerText = 'See Fewer Clients';
+    }
+
+    function closeClientsExp(el){
+        $clientsContainer.slideUp("slow");
+        el.innerText = 'See More Clients';
+    }
 
     /*NAVIGATION*/
     var NAV_HEIGHT = 110;
@@ -74,9 +75,19 @@ $(document).ready(function() {
             var $target = $(this.hash), target = this.hash;
             if (target) {
                 var targetOffset = $target.offset().top - NAV_HEIGHT;
+                var closedHeight = $(".clientsExp").height();
+
                 $(this).click(function(event) {
                     event.preventDefault();
-                    $(scrollElem).animate({scrollTop: targetOffset}, 400, function() {
+
+                    //check to see if subpages are expanded
+                    //and if so, account for their height
+                    var $clientsContainer = $(".clientsExp .container");
+                    var expHeight = 0;
+                    if(( $(this.parentElement).index() > $("#clientNavItem").index() ) && ( $clientsContainer.is(":hidden") == false )){
+                        expHeight = $(".clientsExp").height() - closedHeight;
+                    }
+                    $(scrollElem).animate({scrollTop: targetOffset + expHeight}, 400, function() {
                         var scrollMem = $(scrollElem).scrollTop();
                         location.hash = target;
                         $(scrollElem).scrollTop( scrollMem );
@@ -103,6 +114,30 @@ $(document).ready(function() {
             }
         }
         return [];
+    }
+
+    $(".row1").click( function(){
+       scrollDown(500);
+    });
+    $(".row2").click( function(){
+        scrollDown(800);
+    });
+    $(".row3").click( function(){
+        scrollDown(1000);
+    });
+    $(".row4").click( function(){
+        scrollDown(1200);
+    });
+    $(".row5").click( function(){
+        scrollDown(1500);
+    });
+    function scrollDown(px){
+        openClientsExp( $(".clientsExp .button") );
+        console.log("scroll to row " + px);
+        $(scrollElem).animate({scrollTop: $(scrollElem).scrollTop() + px}, 400, function() {
+            var scrollMem = $(scrollElem).scrollTop();
+            $(scrollElem).scrollTop( scrollMem );
+        });
     }
 
 });

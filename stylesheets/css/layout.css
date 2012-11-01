@@ -185,18 +185,23 @@ ul li.twolines {
   margin: 42px 0 -24px 0;
 }
 .bioScott {
-  background-image: url(../../images/test.jpg);
+  color: #3a3939;
+  background-image: url(../../images/scott2.jpg);
   background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   background-color: rgba(0, 0, 0, 0.2);
+  height: 806px;
+}
+.bioScott.alternate {
+  background-image: url(../../images/scott.jpg);
 }
 .bioScott .columns {
-  padding: 67px 0 126px;
+  padding: 140px 0 126px;
 }
 .bioScott + .bar {
-  height: 145px;
+  height: 119px;
   margin-top: -97px;
 }
 .bioScott + .bar + .bar {
@@ -204,7 +209,8 @@ ul li.twolines {
   margin-top: -121px;
 }
 .bioAnnie {
-  background-image: url(../../images/test_b.jpg);
+  color: #3a3939;
+  background-image: url(../../images/annie2.jpg);
   background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -212,12 +218,19 @@ ul li.twolines {
   background-color: rgba(0, 0, 0, 0.2);
   margin-top: -48px;
 }
+.bioAnnie.alternate {
+  background-image: url(../../images/annie.jpg);
+}
 .bioAnnie .columns {
   padding: 80px 0 42px;
 }
 .bioAnnie + .bar {
-  height: 73px;
-  margin-top: -25px;
+  height: 72px;
+  margin-top: 0px;
+}
+.bioAnnie p {
+  margin: 0;
+  text-indent: 1em;
 }
 .clients .container {
   padding-top: 68px;
@@ -229,7 +242,7 @@ ul li.twolines {
   background: url(../../images/logo_block.jpg) no-repeat;
   width: 100%;
   height: 240px;
-  margin: -7px 0 24px;
+  margin: 5px 0 15px;
   float: left;
 }
 .clients .bar {
@@ -278,17 +291,17 @@ a.button:visited:focus {
   color: #f8ef67;
 }
 .clientsExp {
-  margin: -2px 0 -30px;
+  margin: -5px 0 -30px;
 }
 .clientsExp .bar {
-  margin-top: 36px;
+  margin-top: 37px;
 }
 .clientsExp .bar + .bar {
   height: 24px;
   margin-top: 24px;
 }
 .clientsExp .container {
-  margin-top: 37px;
+  margin-top: 36px;
 }
 .services .container {
   margin-top: 63px;
@@ -315,7 +328,7 @@ a.button:visited:focus {
   margin-top: 5px;
 }
 .specialties .four {
-  margin-bottom: 39px;
+  margin-bottom: 37px;
 }
 .specialties .four img {
   margin-top: -21px;
@@ -332,8 +345,8 @@ a.button:visited:focus {
   margin-top: 23px;
 }
 .contact {
-  background: rgba(0, 0, 0, 0.1);
-  height: 760px;
+  background: url(../../images/texture_bg.jpg) repeat;
+  height: 505px;
   margin-top: -47px;
 }
 .contact h1 {

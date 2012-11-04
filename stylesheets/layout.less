@@ -66,14 +66,14 @@ h2 {
 
 h3 {
     font-size:20px;
-    line-height:39px;
+    line-height:27px;
     margin-bottom:10px;
     padding-bottom:5px;
     border-bottom:6px solid @ltblue;
 
     &.twolines {
         line-height: 26px;
-        margin-top: -13px;
+        margin-top: -25px;
     }
 }
 
@@ -129,6 +129,7 @@ ul li {
     ul {
         font-size:14px;
         margin:52px 0 0 0;
+        width:587px;
         float:right;
 
         li {
@@ -136,43 +137,31 @@ ul li {
             padding:0 3px;
             display: inline;
 
+            .tabBr { display:none;}
+
             a {
                 color:#3d444e;
                 font-weight:700;
                 &:hover { color:@red;}
             }
 
-            em{font-weight:700;}
+            em {font-weight:700;}
         }
-    }
 
-    .logoLink {
-        position:absolute;
-        width:216px;
-        height:85px;
-        display: block;
+        span { display:none; }
     }
 
     .logo {
         margin-top: 14px;
-
-        span {
-            display: inline-block;
-            *display: inline;
-            width: 216px;
-            height: 85px;
-            background: url(../../images/logo.png) 0 0 no-repeat;
-            background-size: 100%;
-            text-indent: 100%;
-            white-space: nowrap;
-            overflow: hidden;
-            zoom: 1;
-        }
+        width: 216px;
+        height: 85px;
+        float:left;
+        background-image: url(../../images/logo.png) ;
+        background-repeat:no-repeat;
+        background-size: contain;
+        text-indent: -999999px;
     }
 
-    .svg .logo span {
-        background: none;
-    }
 }
 
 .sticky {
@@ -197,15 +186,18 @@ ul li {
 
     .four {
         font-size: 13px;
+        text-align: center;
         margin-top:6px;
+
+        h4, p { text-align: left; }
 
         p {
             margin-bottom:17px;
-
             clear:both;
         }
 
-        img { margin-left: 45px;}
+        img { margin: 0 auto;}
+
     }
 
     & + .bar {
@@ -221,10 +213,9 @@ ul li {
     -webkit-background-size:cover;
     -moz-background-size:cover;
     background-size:cover;
+    background-repeat:no-repeat;
     background-color:rgba(0,0,0,.2);
     height:806px;
-
-    &.alternate { background-image: url(../../images/scott.jpg); }
 
     .columns { padding: 140px 0 126px; }
 
@@ -245,10 +236,9 @@ ul li {
     -webkit-background-size:cover;
     -moz-background-size:cover;
     background-size:cover;
+    background-repeat:no-repeat;
     background-color:rgba(0,0,0,.2);
     margin-top: -48px;
-
-    &.alternate { background-image: url(../../images/annie.jpg); }
 
     .columns { padding: 80px 0 42px; }
 
@@ -266,7 +256,9 @@ ul li {
     .eight { padding-top:10px; }
 
     .logoBlock {
-        background: url(../../images/logo_block.jpg) no-repeat;
+        background-image: url(../../images/logo_block.jpg) ;
+        background-repeat:no-repeat;
+        background-size:contain;
         width: 100%;
         height: 240px;
         margin:5px 0 15px;
@@ -294,7 +286,7 @@ a.button, a.button:visited {
     text-align: center;
     text-transform:uppercase;
     text-shadow:0 1px 1px rgba(0, 0, 0, .4);
-    background: #eee;
+    background: #da062a;
     background-image: -webkit-gradient(linear, left top, left bottom, from(#da062a), to(#e0314f));
     background-image: -webkit-linear-gradient(top, #e0314f, #da062a);
     background-image: -moz-linear-gradient(top, #e0314f, #da062a);
@@ -414,26 +406,127 @@ a.button, a.button:visited {
 
 /* #Media Queries
 ================================================== */
+    /* Small Screen */
+    @media only screen and (max-width: 959px) {
+        .mainNav {
+            .logo { width:189px; margin-top:19px; }
+            ul { text-align: right; width: 396px; margin-top:37px;
+                li { float:none;
+                    .tab { display:none;}
+                    .tabBr { display:block;}
+                }
+            }
+        }
+        .mast {
+            h4 {
+                span { width:120px; }
+                &.second span { width:134px; }
+                &.third span { width:122px; }
+            }
+        }
+        h3.twolines { margin-top:0;}
+        .clients .logoBlock {
+            width:757px;
+            height: 190px;
+        }
+        .services .four img { margin-top: 44px;}
+        .specialties .four img { margin-top: 35px;}
+    }
 
-	/* iPad Portrait/Browser */
-	@media only screen and (min-width: 768px) and (max-width: 991px) {}
+	/* Tablet */
+    @media only screen and (min-width: 601px) and (max-width: 767px) {
+        .mainNav {
+            height: 95px;
+            .logo { width:150px; }
+            ul { text-align: right; width: 396px; margin-top:22px;
+                li { float:none;
+                    .tab { display:none;}
+                    .tabBr { display:block;}
+                }
+            }
+        }
+        .mast {
+            .topGap { height: 139px; }
+            h4 {
+                span { width:434px; }
+                &.second span { width:444px; }
+                &.third span { width:435px; }
+            }
+        }
+        .bioScott {
+            height:auto;
+            .six.columns { padding-left:170px; width: 390px;}
+            div.six.columns { display:none;}
+            .columns { padding-top:44px;}
+            & + .bar {
+                height:84px;
+                & + .bar { display:none;}
+            }
+            h2 { margin-bottom: 5px;}
+        }
+        .bioAnnie {
+            .six.columns {  width: 376px;}
+            div.six.columns { display:none; }
+            h2 { margin-bottom: 5px;}
+        }
+        .clients .logoBlock {
+            width:557px;
+            height: 140px;
+        }
+        .specialties .four.columns,
+        .services .four.columns { display:none; }
 
-	/* Mobile/Browser */
-	@media only screen and (max-width: 767px) {}
-
-	/* Mobile Landscape/Browser */
-	@media only screen and (min-width: 480px) and (max-width: 767px) {}
-
-	/* Anything smaller than standard 960 */
-	@media only screen and (max-width: 959px) {}
-
-	/* iPad Portrait Only */
-	@media only screen and (min-width: 768px) and (max-width: 991px) and (max-device-width: 1000px) {}
-
-	/* Mobile Only */
-	@media only screen and (max-width: 767px) and (max-device-width: 1000px) {}
-
-	/* Mobile Landscape Only */
-	@media only screen and (min-width: 480px) and (max-width: 767px) and (max-device-width: 1000px) {}
+    }
 
 
+	/* Mobile Sm */
+	@media only screen and (max-width: 600px)  {
+        .mast {
+            .topGap { height:140px; }
+            h4 {
+                em { float:none;}
+                span { width:100%; margin:9px 0 12px;}
+                &.second span { width:100%; }
+                &.third span { width:100%; }
+            }
+            & + .bar { margin: 31px 0 0px; }
+        }
+        .mainNav {
+            height:119px;
+            .logo { margin:7px 0 0 0;width: 130px; height: 61px;  }
+            ul { margin: 0; float:none; clear:both; text-align:left;
+                .mob { display:none; }
+                span { display:block; height:1px;}
+                li {
+                    float:none; margin-bottom:3px;
+                    .tabBr { display:none;}
+                }
+            }
+        }
+        .bioScott {
+            background:none;
+            height:auto;
+            div.six.columns { display:none;}
+            .columns { padding-top:44px;}
+            & + .bar {
+                height:84px;
+                & + .bar { display:none;}
+            }
+        }
+        .bioAnnie {
+            background:none;
+            div.six.columns { display:none;}
+        }
+        .clients .logoBlock { display:none;}
+        .clientsExp .bar + .bar { display:none;}
+        h3.twolines { margin-top:0;}
+        .specialties .four.columns,
+        .services .four.columns { display:none; }
+
+        .specialties {
+            & + .bar {
+                margin-top:16px;
+                & + .bar { display:none;}
+            }
+        }
+    }

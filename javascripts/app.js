@@ -116,6 +116,7 @@ $(document).ready(function() {
         return [];
     }
 
+    //TODO: Test this on a smaller screen
     $(".row1").click( function(){
        scrollDown(500);
     });
@@ -131,13 +132,20 @@ $(document).ready(function() {
     $(".row5").click( function(){
         scrollDown(1500);
     });
+
+    //used for links into the expanded clients section
     function scrollDown(px){
         openClientsExp( $(".clientsExp .button") );
-        console.log("scroll to row " + px);
+        //todo: figure out why the label isnt changing
         $(scrollElem).animate({scrollTop: $(scrollElem).scrollTop() + px}, 400, function() {
             var scrollMem = $(scrollElem).scrollTop();
             $(scrollElem).scrollTop( scrollMem );
         });
     }
+
+
+    //seeing if i can animate a pinwheel
+
+
 
 });
